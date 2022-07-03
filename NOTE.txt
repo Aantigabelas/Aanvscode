@@ -1,0 +1,22 @@
+1. install composer Installation - Windows : https://getcomposer.org/doc/00-intro.md#installation-windows
+2. Membuat Project Laravel 9 composer create-project laravel/laravel:^9.0 aanlaravel
+3. Jalankan perintah php artisan serve
+4. Konfigurasi Koneksi Database Karena akan menggunakan database, maka perlu melakukan konfigurasi koneksi database-nya terlebih dahulu. kemudian cari file yang bernama .env.
+5. Membuat Database
+buka http://localhost/phpmyadmin. Kemudian silahkan buat database baru dengan nama aanlaravel .
+6. Membuat Model dan Migration lalu masuk cmd php artisan make:model Post -m
+7. Jalankan migrasi php artisan migrate
+8. Menambahkan Route dengan type resource, yang artinya route tersebut akan berisi beberapa route-route untuk kebutuhan CRUD. Seperti index, create, store, show, edit, update dan destroy. lalu jalankan di cmd php artisan route:list
+9. Membuat View dan Menampilkan Data buat folder baru dengan nama posts di dalam folder resources/views dan di dalam folder posts silahkan buat file baru dengan nama index.blade.php
+10. Menambahkan Method Create dan Store. Untuk method create akan kita gunakan untuk menampilkan halaman form yang nantinya kita gunakan untuk melakukan input data, Dan method store kita gunakan untuk memproses data yang akan disimpan ke dalam database.
+11. Membuat Halaman View / Form Create lalu buat file baru dengan nama create.blade.php di dalam folder resources/views/posts.
+12. Menambahkan 2 method baru di dalam controller post, yaitu edit dan update. Untuk method edit akan kita gunakan untuk menampilkan halaman edit dan untuk method update akan digunakan untuk memproses data yang sudah di edit.
+13. Membuat Halaman View / Form Edit buat file baru dengan nama edit.blade.php di dalam folder resources/views/posts/,
+14. Menambahkan method baaru yang bernama destroy di dalam controller post app/Http/Controllers/PostController.php, Dimana kita melakukan delete gambar dari data post yang terkait. 
+
+Catatan : tugas ini saya mencari refrensi di youtube dan artikel, Saya mengalami kendala dan kurang teliti seperti kurangnya codingan saya bagian edit.blade.php pada file di dalam views. dan pada saat mengedit data nya di hilang tidak tetap. 
+
+
+
+
+
